@@ -29,3 +29,17 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+label:hover .tooltip {
+    display: inline-block;
+}
