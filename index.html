@@ -9,28 +9,25 @@
 <body>
     <form>
         <label for="nom">Nom :
-            <span class="tooltip">Entrez un nom valide</span>
-        </label>
-        <input type="text" id="nom" name="nom" required>
-        
+            <span class="tooltip">Entrez un nom valide</span></label>
+        <input type="text" id="nom" name="nom" placeholder="Dupont" required pattern="[A-Za-zÀ-ÿ\-]+">
+
         <label for="prenom">Prénom :
-            <span class="tooltip">Entrez un prénom valide</span>
-        </label>
-        <input type="text" id="prenom" name="prenom" required>
+            <span class="tooltip">Entrez un prénom valide</span></label>
+        <input type="text" id="prenom" name="prenom" placeholder="Thomas" required pattern="[A-Za-zÀ-ÿ\-]+">
 
         <label for="email">Email :
-            <span class="tooltip">Entrez un email valide</span>
-        </label>
-        <input type="email" id="email" name="email" required>
+            <span class="tooltip">Entrez un email valide</span></label>
+        <input type="email" id="email" name="email" placeholder="d.thomas@xyz.com" required>
 
         <label for="telephone">Téléphone :
-            <span class="tooltip">Entrez un numéro de téléphone valide</span>
-        </label>
-        <input type="tel" id="telephone" name="telephone">
+            <span class="tooltip">Entrez un numéro de téléphone valide</span></label>
+        <input type="tel" id="telephone" name="telephone" placeholder="0650505050" pattern="[0-9]+" >
 
         <label for="message">Message :
             <span class="tooltip">Entrez un message valide</span>
         </label>
+
         <textarea id="message" name="message" required></textarea>
 
         <button type="submit">Envoyer</button>
