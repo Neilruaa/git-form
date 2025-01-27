@@ -43,3 +43,55 @@ button:hover {
 label:hover .tooltip {
     display: inline-block;
 }
+
+.rgpd-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.rgpd-container input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.rgpd-container input[type="checkbox"]:checked + .checkmark {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    animation: bounce 0.4s ease;
+}
+
+.rgpd-container input[type="checkbox"]:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
