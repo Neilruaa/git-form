@@ -8,17 +8,31 @@
 </head>
 <body>
     <form>
-        <label for="nom">Nom :</label>
+        <label for="nom">Nom :
+            <span class="tooltip">Entrez un nom valide</span>
+        </label>
         <input type="text" id="nom" name="nom" required>
         
-        <label for="prenom">Prénom :</label>
+        <label for="prenom">Prénom :
+            <span class="tooltip">Entrez un prénom valide</span>
+        </label>
         <input type="text" id="prenom" name="prenom" required>
-        <label for="email">Email :</label>
+
+        <label for="email">Email :
+            <span class="tooltip">Entrez un email valide</span>
+        </label>
         <input type="email" id="email" name="email" required>
-        <label for="telephone">Téléphone :</label>
+
+        <label for="telephone">Téléphone :
+            <span class="tooltip">Entrez un numéro de téléphone valide</span>
+        </label>
         <input type="tel" id="telephone" name="telephone">
-        <label for="message">Message :</label>
+
+        <label for="message">Message :
+            <span class="tooltip">Entrez un message valide</span>
+        </label>
         <textarea id="message" name="message" required></textarea>
+
         <button type="submit">Envoyer</button>
     </form>
 </body>
